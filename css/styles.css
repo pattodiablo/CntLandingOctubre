@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'Uni Sans';
+  src: url('fonts/unisansbold-webfont.woff2') format('woff2'),
+  url('fonts/unisansbold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Uni Sans Book';
+  src: url('fonts/unisansbook-webfont.woff2') format('woff2'),
+  url('fonts/unisansbook-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Uni Sans Light';
+  src: url('fonts/unisanslight-webfont.woff2') format('woff2'),
+  url('fonts/unisanslight-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+html body{
+  background-color:#fff;
+  font-family: 'Uni Sans Book';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+h1{
+  color:#fff;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Uni Sans", sans-serif;
+  color: #606060;
+  line-height: 1.2em !important;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 15px;
+}
+.seleccionadores{background: #1c9cd8; margin: 0;}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #1c9cd8;
+  border: none;
+  color: #fff;
+  font-family: "Uni Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fad206;
+  color: #fff;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #fad206;
+}
+
+.button.is-checked {
+  color: #fff;
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: none;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.grid-item,.grid-sizer{
+  width: calc(25% - 10px);
+  padding-top: calc(25% - 10px);
+  position: absolute;
+  cursor: pointer;
+}
+
+.grid-item-2x {
+  width: calc(50% - 10px);
+  padding-top: calc(50% - 10px);
+}
+/*
+.grid-item-height-1x{
+  height: 50%;
+}
+*/
+
+.close-phone{
+  font-size: 2.5rem;
+  color: var(--danger);
+}
+
+@media screen and (max-width: 992px) {
+  .grid-item, .grid-sizer{
+    width: calc(50% - 10px);
+    padding-top: calc(50% - 10px);
+  }
+
+  .button {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-item, .grid-sizer{
+    width: calc(100% - 10px);
+    padding-top: calc(100% - 10px);
+  }
+  .button {
+    font-size: 28px;
+  }
+}
+
+.item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.content-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cursor1{cursor:pointer; position:relative;  z-index: 1;}
+
+
+.nombre-terminal-destacado{
+  color: #606060;
+  font-size: 1.5em;
+  font-weight: 600;
+  background-color: rgba(255,255,255,0.7);
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.nombre-terminal{
+  color: #606060;
+  font-size: 1.5em;
+  font-weight: 600;
+  background-color: rgba(255,255,255,0.7);
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+}
+.cuota{
+  font-size: 3rem;
+  line-height: 2rem;
+  color: #00a1e4;
+}
+.precio-cuota{
+  font-size: 7rem;
+  line-height: 7rem;
+  color: #00a1e4;
+}
+.iva{
+  font-size: 2rem;
+  line-height: 1rem;
+  color: #00a1e4;
+}
+.cuota-equipo{
+  font-size: 1.9rem;
+  color: #00a1e4;
+  font-family: "Uni Sans Light";
+}
+.formulario-modal{
+  background-color:#00a1e4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.formulario-modal h3{
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Uni Sans Light";
+}
+
+.form-area input {
+  padding: 1.5rem;
+  font-family: "Uni Sans Light";
+}
+.form-area input, .form-area textarea {
+  border-radius: 0.40em;
+  font-size: 1rem;
+  font-family: "Uni Sans Light";
+}
+.form-area input::placeholder{
+  color:#00a1e4;
+  font-size: 1rem;
+  font-family: "Uni Sans Light";
+}
+.form-area textarea {
+	height: 180px;
+	margin-top: 0px;
+}
+.form-area button{
+  background-color: #fad206;
+  color:#00a1e4;
+  font-size: 1.3rem;
+  border-radius: 0.80em;
+  border: 0px;
+  width: 30%;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.mb-5 {
+	margin-bottom: 5px;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-15 {
+	margin-bottom: 15px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-25 {
+	margin-bottom: 25px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.mb-70 {
+	margin-bottom: 70px;
+}
+.mb-80 {
+	margin-bottom: 80px;
+}
+.mb-90 {
+	margin-bottom: 90px;
+}
+.mb-100 {
+	margin-bottom: 100px;
+}
+.terminal-modal{
+  font-size: 3rem;
+  color:#606060;
+}
+.spec-modal{
+  font-size: 2.5rem;
+  font-family: "Uni Sans Light";
+}
+.list-spect{
+  font-size: 2rem;
+  color:#606060;
+  font-family: "Uni Sans Light";
+}
+.listas-modal{
+  color:#606060;
+}
+.pantalla{
+  list-style-image: url("../img/icon-cel.png");
+}
+.procesador{
+  list-style-image: url("../img/icon-procesador.png");
+}
+.ram{
+  list-style-image: url("../img/icon-ram.png");
+}
+.almacenamiento{
+  list-style-image: url("../img/icon-almacenamiento.png");
+}
+.expansion{
+  list-style-image: url("../img/icon-externa.png");
+}
+.camara{
+  list-style-image: url("../img/icon-camara.png");
+}
+.bateria{
+  list-style-image: url("../img/icon-bateria.png");
+}
+.sistema-operativo{
+  list-style-image: url("../img/icon-so.png");
+}
+.perfil{
+  list-style-image: url("../img/icon-perfil.png");
+}
+.peso-terminal{
+  list-style-image: url("../img/icon-peso.png");
+}
+.footer{
+  padding-top: 15px;
+  background-color:#fff;
+  color:#1c9cd8;
+  bottom: 0;
+}
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.08 117.02"><defs><style>.cls-1{fill:#606161;}</style></defs><title>iconos-terminales</title><path class="cls-1" d="M22.3,18.54h8.34a1.58,1.58,0,0,1,1.09,1.72q0,7.58,0,15.15a1.58,1.58,0,0,1-1.09,1.72H22.3a1.58,1.58,0,0,1-1.09-1.72q0-7.58,0-15.15A1.58,1.58,0,0,1,22.3,18.54ZM22.24,32.8h8.47v-12H22.24Zm4.28-13.44H24.74c-.22,0-.37,0-.38.31s.12.36.38.36H28.2c.26,0,.38-.09.38-.36s-.15-.31-.38-.31Zm.82,15.56a.86.86,0,0,0-1.73,0,.86.86,0,1,0,1.73,0Z" transform="translate(-16.24 -18.54)"/><g id="JUdaXU.tif"><path class="cls-1" d="M26.48,46.38H31a1.71,1.71,0,0,1,1.8,1.8c0,1.81,0,3.61,0,5.42q0,1.75,0,3.49A1.74,1.74,0,0,1,30.9,59H22a1.73,1.73,0,0,1-1.86-1.87q0-4.43,0-8.86a1.73,1.73,0,0,1,1.39-1.82,2.07,2.07,0,0,1,.41,0Zm3.8,6.27c0-.81,0-1.62,0-2.43A1.29,1.29,0,0,0,29,48.89H24.12a1.29,1.29,0,0,0-1.36,1.36q0,2.41,0,4.82a1.29,1.29,0,0,0,1.33,1.34H29a1.29,1.29,0,0,0,1.32-1.33C30.28,54.27,30.28,53.46,30.28,52.65Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M18.42,54.53H17.7a.43.43,0,0,1-.47-.44c-.05-.73.07-.85.8-.85h1.08a.43.43,0,0,1,.48.47c0,.57.07.88-.8.83Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M34.51,54.53h-.7a.42.42,0,0,1-.47-.46c0-.58-.06-.89.79-.84.35,0,.71,0,1.06,0s.52.16.52.53c0,.08,0,.16,0,.24,0,.37-.16.52-.53.52Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M24.59,44.6c0-.22,0-.45,0-.67a.84.84,0,0,1,0-.19c.07-.27.3-.36.83-.33a.43.43,0,0,1,.45.41c0,.52,0,1,0,1.56a.22.22,0,0,1,0,0c-.07.3-.32.4-.87.35a.42.42,0,0,1-.42-.46c0-.24,0-.48,0-.72Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M25.85,60.69c0,.23,0,.47,0,.7a.74.74,0,0,1,0,.19c-.08.27-.36.38-.87.31a.43.43,0,0,1-.41-.45c0-.5,0-1,0-1.49a.41.41,0,0,1,.43-.43c.59,0,.92-.11.87.8C25.84,60.44,25.85,60.57,25.85,60.69Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M27.1,60.71c0-.25,0-.5,0-.75a.4.4,0,0,1,.41-.44c.6,0,.93-.09.89.79,0,.35,0,.71,0,1.06a.45.45,0,0,1-.52.52h-.29a.44.44,0,0,1-.49-.49c0-.12,0-.24,0-.36s0-.22,0-.34Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M27.13,44.59c0-.22,0-.45,0-.67a.59.59,0,0,1,0-.21c.17-.4.53-.29.83-.29a.4.4,0,0,1,.43.4q0,.78,0,1.56a.41.41,0,0,1-.42.41h0c-.6,0-.89.06-.84-.78C27.14,44.86,27.13,44.72,27.13,44.59Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M31,44.61c0,.25,0,.5,0,.75a.39.39,0,0,1-.4.42c-.63,0-.93.09-.9-.81,0-.35,0-.71,0-1.06a.45.45,0,0,1,.51-.5h.26c.37,0,.52.16.52.53s0,.45,0,.67Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M18.4,49.45h-.7a.44.44,0,0,1-.47-.46s0,0,0,0c0-.7.07-.79.77-.78h1.13a.42.42,0,0,1,.47.46c0,.74-.05.84-.79.84Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M34.53,48.16h.72a.43.43,0,0,1,.46.45c0,.57.07.89-.79.85-.35,0-.7,0-1.06,0s-.52-.16-.53-.53c0-.7.05-.77.76-.77Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M23.34,44.6c0,.25,0,.5,0,.75a.4.4,0,0,1-.42.43c-.59,0-.93.11-.88-.79,0-.35,0-.71,0-1.06s.17-.51.52-.52h.29a.44.44,0,0,1,.49.49C23.35,44.13,23.34,44.36,23.34,44.6Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M18.42,52h-.75a.42.42,0,0,1-.44-.44c0-.57-.08-.9.8-.86.35,0,.71,0,1.06,0a.45.45,0,0,1,.51.5s0,0,0,0c0,.7-.06.78-.75.78h-.43Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M18.43,55.78h.72a.41.41,0,0,1,.45.42c0,.59.1.92-.8.87-.35,0-.71,0-1.06,0a.45.45,0,0,1-.51-.5s0-.06,0-.1c0-.6.09-.7.69-.7h.5Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M34.52,55.78h.7a.68.68,0,0,1,.19,0c.26.08.35.35.3.85a.43.43,0,0,1-.44.42q-.75,0-1.49,0a.41.41,0,0,1-.44-.44c0-.58-.1-.91.79-.85Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M23.31,60.72c0,.24,0,.48,0,.72a.42.42,0,0,1-.43.45c-.57,0-.91.08-.86-.79,0-.36,0-.72,0-1.08a.44.44,0,0,1,.48-.49c.73,0,.81,0,.81.79q0,.2,0,.41Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M34.52,52H33.8a.42.42,0,0,1-.46-.46c0-.74.05-.83.8-.83H35.2c.35,0,.51.16.52.52,0,.1,0,.19,0,.29a.44.44,0,0,1-.49.49h-.7Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M29.64,60.72c0-.25,0-.5,0-.74a.42.42,0,0,1,.45-.45c.75,0,.85.06.85.81,0,.35,0,.71,0,1.06a.45.45,0,0,1-.5.51h-.26c-.37,0-.52-.16-.53-.53,0-.22,0-.43,0-.65Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M23.53,52.65q0-1.18,0-2.36c0-.44.2-.63.63-.63h4.72c.44,0,.63.19.63.63q0,2.36,0,4.72c0,.44-.19.63-.63.63H24.14a.54.54,0,0,1-.61-.61C23.53,54.24,23.53,53.44,23.53,52.65Z" transform="translate(-16.24 -18.54)"/></g><g id="v8RrTZ.tif"><path class="cls-1" d="M35,104.73c0,.53,0,1.06,0,1.58a.59.59,0,0,1-.68.68H18.65c-.51,0-.7-.2-.7-.71s0-1,0-1.54l-.42-.08A1.71,1.71,0,0,1,16.24,103c0-.91,0-1.82,0-2.73s0-1.52,0-2.29A1.7,1.7,0,0,1,18,96.2H34.93a1.69,1.69,0,0,1,1.72,1.34,2.32,2.32,0,0,1,0,.51c0,1.58,0,3.17,0,4.75A1.8,1.8,0,0,1,35,104.73ZM35,103V97.91H18V103Zm-11.33,2.83h1.11v-1.1H23.64Zm2.27,0H27v-1.1H25.91Zm3.39-1.1H28.19v1.1H29.3Zm-9.1,1.1v-1.1H19.1v1.1Zm1.17,0h1.11v-1.1H21.37Zm9.09,0h1.1v-1.1h-1.1Zm3.38-1.09h-1.1v1.1h1.1Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M28.75,99.05h1.12v2.81H28.75Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M24.19,101.87H23.07V99.06h1.12Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M21.91,99v2.81H20.8V99Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M32.14,101.87H31V99.05h1.11Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M24.78,99h1.11v2.81H24.78Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M27.05,101.87V99h1.1v2.82Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M20.2,101.87H19.1V99.05H20.2Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M33.84,99.05v2.81h-1.1V99.05Z" transform="translate(-16.24 -18.54)"/></g><path class="cls-1" d="M33.94,116.26v4.5h-.5c0,.48,0,.94,0,1.4s0,.48.5.43v1.35l-.43,0v2.43l.22,0v1.71l-.22,0v.44h.43v3.28a.8.8,0,0,0,0,.09,1.44,1.44,0,0,1-.56.93,4.34,4.34,0,0,1-.69.33H28.83c-.09-.36-.22-.46-.59-.46H24.72c-.38,0-.5.1-.6.46H20.29a1.45,1.45,0,0,1-.95-.59,5.6,5.6,0,0,1-.34-.76v-9.28h.48v-1.83H19v-7.58a.93.93,0,0,1,.64-.68H30.38a1.2,1.2,0,0,1,.53.36l2.63,2.78A1.39,1.39,0,0,1,33.94,116.26Zm-7.41,15H32c.37,0,.54-.16.54-.53q0-5.12,0-10.24c0-.36-.16-.53-.53-.53H21a.45.45,0,0,0-.51.52q0,5.11,0,10.22c0,.41.16.57.58.57Zm-6.89-17.61v3.57h1.22v-3.57Zm13.28,1.79H31.69V119h1.22ZM30,117.2h1.22v-3.57H30Zm-7.39,0v-3.57H21.35v3.57Zm6.89,0v-3.57H28.24v3.57Zm-2.94-3.57v3.57h1.21v-3.57ZM26,117.2v-3.57h-1.2v3.57Zm-1.72-3.57H23.08v3.56h1.21Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M26.5,131.08H21.14c-.37,0-.45-.07-.45-.45q0-5.08,0-10.15c0-.3.1-.4.39-.4H32c.28,0,.39.11.39.39q0,5.1,0,10.2c0,.31-.1.4-.41.4Z" transform="translate(-16.24 -18.54)"/><g id="iwtkFz.tif"><path class="cls-1" d="M28,68.1l.93.27,1.21.33-.32,1.19c0,.08,0,.15.06.21l1.84,1,.89-.94,1.62,1.63-1,.93c.15.22.28.39.39.57.22.39.44.78.64,1.18.07.14.12.19.29.14.38-.12.76-.21,1.16-.31l.58,2.17-1.35.36c0,.17,0,.34,0,.51,0,.52,0,1,0,1.55a1.08,1.08,0,0,1-.93.84A1,1,0,0,1,32.94,79a1.32,1.32,0,0,1,0-.44,6.29,6.29,0,0,0-2.84-6,6.46,6.46,0,1,0-6.4,11.19,6.36,6.36,0,0,0,3.47.6,1,1,0,0,1,1.11.74,1,1,0,0,1-.58,1.22.91.91,0,0,1-.34.09c-.6,0-1.2,0-1.8,0-.13,0-.17,0-.19.14-.1.39-.21.78-.32,1.2l-2.17-.58c.11-.41.21-.8.32-1.19,0-.09,0-.16-.08-.22l-1.82-1-.91,1-1.61-1.64,1-.93c-.2-.3-.39-.57-.55-.85s-.34-.62-.48-.94c-.06-.13-.12-.15-.25-.11l-1.18.31-.44-1.63c0-.12-.05-.24-.1-.35s0-.2.13-.24c.35-.08.69-.18,1-.28a.2.2,0,0,0,.12-.14c0-.69,0-1.38,0-2.09l-1.34-.36.58-2.17c.4.11.79.2,1.17.31.14,0,.2,0,.26-.12.31-.59.64-1.16,1-1.77l-.95-.89,1.63-1.62.94,1c.12-.09.21-.17.31-.22.48-.28,1-.55,1.45-.82.12-.06.17-.11.13-.26-.12-.38-.21-.77-.32-1.17l1.77-.48L25,68.1h0l.35,1.36c.29,0,.56,0,.83,0s.83,0,1.24,0c.1,0,.15,0,.17-.12.1-.41.21-.83.32-1.24Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M27.93,68.1c-.11.41-.22.82-.32,1.24,0,.1-.07.13-.17.12-.41,0-.83,0-1.24,0s-.53,0-.83,0L25,68.1Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M22.78,76.08l.9,1.21,1.4,1.9a.54.54,0,0,0,.64.22l1.19-.35a1.09,1.09,0,0,0,.62-.46l.65-1a.56.56,0,0,0,0-.77L26,74l-.11-.16a3.29,3.29,0,0,1,2.9.38,5.79,5.79,0,0,1,.81.91c.29.36.56.73.82,1.11a2.4,2.4,0,0,1,.21,2.47c-.24.53-.25.52.16.93l3.34,3.34a1.8,1.8,0,0,1,.48,1.85,1.77,1.77,0,0,1-1.39,1.31,1.81,1.81,0,0,1-1.76-.51l-3.15-3.15c-.17-.17-.34-.35-.52-.51a.41.41,0,0,0-.28-.09c-.49.06-1,.16-1.48.22a2.36,2.36,0,0,1-2.25-.87c-.44-.54-.85-1.1-1.24-1.68a2.46,2.46,0,0,1-.31-2.16C22.38,76.94,22.59,76.54,22.78,76.08Z" transform="translate(-16.24 -18.54)"/></g><path class="cls-1" d="M66.13,19.81h4.62a2.08,2.08,0,0,1,1.32.86c.42.53.87,1,1.3,1.58a.41.41,0,0,0,.38.18,3,3,0,0,1,.62,0A1.62,1.62,0,0,1,75.8,24.1q0,3.14,0,6.29,0,1.73,0,3.46a1.62,1.62,0,0,1-1.09,1.58l-.23.08H57.54l-.07,0a1.61,1.61,0,0,1-1.28-1.61q0-4.9,0-9.79a1.62,1.62,0,0,1,1.65-1.64h5.37a.3.3,0,0,0,.26-.12l.64-.78c.28-.34.56-.67.83-1A1.87,1.87,0,0,1,66.13,19.81ZM65.79,34.2a4.9,4.9,0,1,0-4.9-4.92A4.9,4.9,0,0,0,65.79,34.2Zm2.73-11.7h.77a.75.75,0,0,0,.61-.3,1.35,1.35,0,0,0,.23-1.31.93.93,0,0,0-1-.72H67.81a.84.84,0,0,0-.69.34,1.41,1.41,0,0,0-.06,1.58.84.84,0,0,0,.77.41Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M65.79,32.5a3.15,3.15,0,0,1,0-6.3,3.15,3.15,0,1,1,0,6.3Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M55.67,49.56a4.39,4.39,0,0,1,.37-.81A1.88,1.88,0,0,1,57.66,48H72.59a2,2,0,0,1,1.28.4,1.74,1.74,0,0,1,.72,1.44c0,.46,0,.91,0,1.37l.4.1a1.84,1.84,0,0,1,1.28,1.35,1,1,0,0,0,0,.11v2.5l0,0a1.91,1.91,0,0,1-1.7,1.52c0,.1,0,.2,0,.31,0,.32,0,.63,0,.95a1.89,1.89,0,0,1-1.95,2c-1.14,0-2.27,0-3.41,0H57.7a1.9,1.9,0,0,1-2-1.51l0,0Q55.67,54,55.67,49.56Zm9.46.13H57.71c-.29,0-.31,0-.31.31q0,3.92,0,7.84c0,.46,0,.46.46.46H72.57c.27,0,.31,0,.31-.3q0-1,0-2a.85.85,0,0,1,.94-1h.54c.15,0,.23-.05.23-.23,0-.57,0-1.14,0-1.71,0-.16-.07-.22-.22-.22H73.8a.85.85,0,0,1-.91-.92c0-.66,0-1.32,0-2,0-.31,0-.33-.33-.33Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M66.15,57.42H58.26V50.55h6.48c.19,0,.27,0,.3.25C65.41,53,65.78,55.2,66.15,57.42Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M65.52,67.93h.94l.18,0A8.88,8.88,0,0,1,71,69.4a9.14,9.14,0,0,1,4.18,6.47c0,.28.07.56.11.84v1a1.43,1.43,0,0,0,0,.17,8.94,8.94,0,0,1-1.65,4.63,9.13,9.13,0,0,1-6.28,3.87l-.86.11h-.94l-.18,0a8.84,8.84,0,0,1-4.17-1.33,9.14,9.14,0,0,1-4.37-6.62c0-.3-.07-.61-.11-.91v-.8a1.71,1.71,0,0,0,0-.19,8.94,8.94,0,0,1,1.66-4.73A9.13,9.13,0,0,1,64.66,68ZM65.1,81.36l5.2.77c0-.08,0-.14,0-.2,0-1.4,0-2.81,0-4.21,0-.18-.06-.21-.22-.21H65.31c-.18,0-.22.06-.22.23,0,1.14,0,2.27,0,3.41C65.09,81.21,65.1,81.28,65.1,81.36Zm0-8.27c0,.08,0,.14,0,.21,0,1.14,0,2.29,0,3.43,0,.17,0,.21.21.21h4.79c.17,0,.23,0,.23-.22,0-1.4,0-2.79,0-4.19,0-.06,0-.12,0-.2Zm-.6,8.18v-.2c0-1.12,0-2.24,0-3.36,0-.16-.05-.2-.21-.2H60.71c-.16,0-.21,0-.21.2q0,1.39,0,2.78c0,.15,0,.2.2.23l2.85.42Zm0-8.07h-.1l-3.74.55c-.11,0-.14.07-.14.18q0,1.42,0,2.85c0,.12,0,.17.16.17h3.68c.11,0,.16,0,.16-.15,0-1.17,0-2.33,0-3.5A.89.89,0,0,0,64.5,73.19Z" transform="translate(-16.24 -18.54)"/><g id="_0zoLNT.tif" data-name="0zoLNT.tif"><path class="cls-1" d="M61.6,97v9.41h1.88l-2.84,3.15-2.82-3.14h1.87V95.16H71v-1.9l3.15,2.83L71,98.91V97Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M72.27,102.69H71v-1.24h1.23Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M71,104h1.23v1.23H71Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M67.24,106.48v1.23H66v-1.23Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M69.75,107.72H68.52v-1.23h1.24Z" transform="translate(-16.24 -18.54)"/><path class="cls-1" d="M72.27,106.48v1.23H71v-1.23Z" transform="translate(-16.24 -18.54)"/></g><path class="cls-1" d="M71.58,135.56H60.45a3.16,3.16,0,0,1,.21-.39,4,4,0,0,1,1.84-1.37,3.41,3.41,0,0,0,.8-.4,4.39,4.39,0,0,0,1.91-3.6c0-3.15,0-6.31,0-9.46v-.24a16,16,0,0,0-4,1.2l.12.23,2.59,4.94c.1.18.16.39.46.3a3.68,3.68,0,0,1-1.75,3.37,3.57,3.57,0,0,1-3.93-.05,3.69,3.69,0,0,1-1.55-3.3c.15,0,.29,0,.38-.16.93-1.8,1.88-3.58,2.82-5.38a.37.37,0,0,0,0-.25.64.64,0,0,1,.33-.81l1.39-.71a5.42,5.42,0,0,1,2-.59l1.15-.1V118h1.63v.81H67a17.32,17.32,0,0,1,1.82.24,11.56,11.56,0,0,1,2.61,1.2.58.58,0,0,1,.24.72.37.37,0,0,0,0,.34l2.68,5.11c.1.19.15.45.49.35a3.65,3.65,0,0,1-1.93,3.46,3.54,3.54,0,0,1-4-.29,3.78,3.78,0,0,1-1.35-3.19c.26.09.34-.06.43-.23l2.64-5,.11-.23a15.07,15.07,0,0,0-4-1.2v.31c0,3.09,0,6.18,0,9.27A4.6,4.6,0,0,0,68,132.8a3.65,3.65,0,0,0,1.45,1,5.89,5.89,0,0,1,1.09.58A2.75,2.75,0,0,1,71.58,135.56ZM58,126.77h5.43l-2.71-5.17Zm15.91,0-2.71-5.18-2.73,5.18Z" transform="translate(-16.24 -18.54)"/></svg>
