@@ -14,8 +14,15 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/jqueryAccordeon.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/formulario.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jqueryUI.js"></script>
@@ -120,25 +127,35 @@ $('#promo').click();
 
 		  <div>
 		   <img src="images/detalleInfo1.png" width="100%">
+ <div class="pulsate-bck" ><button style="width: 150px; height: 50px; font-size: 1em" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loquiero">lo quiero</button></div>
 
+		    <div style="height: 30px;"></div>
 		  </div>
 		 
 
 		  <h3 id="cnttv"><img src="images/bannerInfo2.png" width="100%"></h3>
 		  <div>
 		  <img src="images/detalleInfo2.png" width="100%">
+		    <div class="pulsate-bck" ><button style="width: 150px; height: 50px; font-size: 1em" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loquiero">lo quiero</button></div>
+
+		    <div style="height: 30px;"></div>
 		  </div>
 
 
 		  <h3 id="movilpos"><img src="images/bannerInfo3.png" width="100%"></h3>
 		  <div>
 		  <img src="images/detalleInfo3.png" width="100%">
-		   
+		    <div class="pulsate-bck" ><button style="width: 150px; height: 50px; font-size: 1em" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loquiero">lo quiero</button></div>
+
+		    <div style="height: 30px;"></div>
 		  </div>
 
 		  <h3 id="movilpre"><img src="images/bannerInfo4.png" width="100%"></h3>
 		  <div>
 		  <img src="images/detalleInfo4.png" width="100%">
+		   <div class="pulsate-bck" ><button style="width: 150px; height: 50px; font-size: 1em" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loquiero">lo quiero</button></div>
+
+		    <div style="height: 30px;"></div>
 		  </div>
 
 
@@ -158,7 +175,9 @@ $('#promo').click();
 		  <div style="width: 410px; display: inline-block;  background-color: #fff; color: #fff; margin-top: 30px;"><img src="images/telefono6.png" width="100%"></div>
 		  <div style="width: 410px; display: inline-block;  background-color: #fff; color: #fff; margin-top: 30px;"><img src="images/telefono7.png" width="100%"></div>
 		   <img src="images/info5-2.png" width="100%">
-		  
+		   <div class="pulsate-bck" ><button style="width: 150px; height: 50px; font-size: 1em" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loquiero">lo quiero</button></div>
+
+		
 		  <div style="height: 36px;"></div>	
 </div>
 		  </div>
@@ -174,10 +193,89 @@ $('#promo').click();
 
 	</div>
 
+<!-- Modal  Form-->
+	<div class="modal fade" id="loquiero" >
+            <div class="modal-dialog" role="document" style="width: 100%">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close close-phone" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 0px;">
+                        <div class="container-fluid formulario-modal" >
+                            <!--Formulario-->
+                            <h3>Llena el formulario con tus datos personales</h3>
+                            <form class="form-area mt-60 contact-form text-right" id="huaweiWS331C">
+                                <div class="container">
+                                        <input name="name" placeholder="Nombres" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'" class="common-input mb-20 form-control" required="" type="text">
+                                        <input name="apname" placeholder="Apellidos" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Apellidos'" class="common-input mb-20 form-control" required="" type="text">
+                                        <input name="identification" placeholder="Número de Cédula" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Número de Cédula'" class="common-input mb-20 form-control" required="" type="text">
+                                        <input name="email" placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" class="common-input mb-20 form-control" required="" type="email">
+                                        <input name="phone" placeholder="Teléfono de contacto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono de contacto'" class="common-input mb-20 form-control" required="" type="text">
+                                    
+                                    <input name="address" placeholder="Dirección" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ciudad'" class="common-input mb-20 form-control" required="" type="text">							</div>
+                                <div class="container text-center"><button class="primary-btn text-uppercase" type="submit">Lo quiero <span style="display: none;" class="fas fa-spinner fa-spin"></span></button></div>
+                            </form>
+                            <div class="answer">
+                                <div style="display: none;" class="success">
+                                    <div class="alert alert-success" role="alert">
+                                        Formulario enviado con éxito. Uno de nuestros representantes se comunicará pronto contigo.
+                                    </div>
+                                </div>
+                                <div style="display: none;" class="error">
+                                    <div class="alert alert-danger" role="alert">
+                                        Ups! Formulario no enviado, vuelva a intentar nuevamente.
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--End Formulario-->
+                    </div>
+    
+                    <!--<div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>-->
+                </div>
+            </div>
+        </div><!--Fin Modal Motorola G5 Plus -->
 
 
+	<script type="text/javascript">
+        var $forms = $('.contact-form');
+        $forms.submit(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            sendLead(event)
+        })
+
+        const sendLead = function (event) {
+            var $target = $(event.target)
+            var formData = $target.serializeArray()
+            $target.find('.fa-spinner').show()
+            formData.push({name: 'equipo', value: event.target.id})
+            $.ajax({
+                type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                url: 'sender.php', // the url where we want to POST
+                data: formData, // our data object
+                dataType: 'json', // what type of data do we expect back from the server
+                encode: true,
+                crossDomain: false
+            }).done(function (data) {
+                if (data === 0) {
+                    $target.hide()
+                    $target.parent().find('.success').show()
+                } else {
+                    $target.hide()
+                    $target.parent().find('.error').show()
+                }
+            }).fail(function () {
+                $target.hide()
+                $target.parent().find('.error').show()
+            })
+        }
 
 
+	</script>
 
 </body>
 
